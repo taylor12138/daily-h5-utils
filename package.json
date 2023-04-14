@@ -1,7 +1,9 @@
 {
   "name": "daily-h5-utils",
-  "version": "0.0.2-beta.3",
+  "version": "0.0.2-beta.4",
   "description": "h5日常utils方法合集",
+  "main": "./lib/bundle.cjs.js",
+  "module": "./lib/bundle.esm.js",
   "type": "module",
   "files": [
     "lib"
