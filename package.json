@@ -1,10 +1,11 @@
 {
   "name": "daily-h5-utils",
-  "version": "0.0.1-beta.2",
+  "version": "0.0.1-beta.3",
   "description": "h5日常utils方法合集",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,13 @@
   "bugs": {
     "url": "https://github.com/taylor12138/daily-h5-utils/issues"
   },
-  "homepage": "https://github.com/taylor12138/daily-h5-utils#readme"
+  "homepage": "https://github.com/taylor12138/daily-h5-utils#readme",
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "rollup": "^3.20.2"
+  }
 }
