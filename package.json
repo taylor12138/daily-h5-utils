@@ -1,6 +1,6 @@
 {
   "name": "daily-h5-utils",
-  "version": "1.0.0",
+  "version": "0.0.1-beta.1",
   "description": "h5日常utils方法合集",
   "main": "index.js",
   "scripts": {
