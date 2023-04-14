@@ -1,8 +1,11 @@
 {
   "name": "daily-h5-utils",
-  "version": "0.0.2-beta.2",
+  "version": "0.0.2-beta.3",
   "description": "h5日常utils方法合集",
   "type": "module",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c"
