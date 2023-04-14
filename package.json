@@ -1,6 +1,6 @@
 {
   "name": "daily-h5-utils",
-  "version": "0.0.2-beta.1",
+  "version": "0.0.2-beta.2",
   "description": "h5日常utils方法合集",
   "type": "module",
   "scripts": {
