@@ -4,9 +4,6 @@ node_modules
 
 #data
 s/
-public/
-dist/
-lib/
 *.tgz
 
 #vim
