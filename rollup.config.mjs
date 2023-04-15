@@ -11,10 +11,6 @@ export default {
       format: "cjs",
     },
     {
-      file: path.resolve(__dirname, "index.js"),
-      format: "cjs",
-    },
-    {
       file: path.resolve(__dirname, "lib/bundle.esm.js"),
       format: "esm",
     },
