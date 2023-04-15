@@ -1,6 +1,7 @@
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import { getBabelOutputPlugin } from "@rollup/plugin-babel";
+import { terser } from "rollup-plugin-minification";
 const path = require("path");
 
 export default {
@@ -9,10 +10,12 @@ export default {
     {
       file: path.resolve(__dirname, "lib/bundle.cjs.js"),
       format: "cjs",
+      plugins: [terser()],
     },
     {
       file: path.resolve(__dirname, "lib/bundle.esm.js"),
       format: "esm",
+      plugins: [terser()],
     },
   ],
   plugins: [

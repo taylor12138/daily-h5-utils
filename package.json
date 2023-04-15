@@ -1,6 +1,6 @@
 {
   "name": "daily-h5-utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "h5日常utils方法合集",
   "main": "./lib/bundle.cjs.js",
   "module": "./lib/bundle.esm.js",
@@ -9,7 +9,8 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c --bundleConfigAsCjs"
+    "build": "rollup -c --bundleConfigAsCjs",
+    "build:webpack": "webpack"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,10 @@
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^24.1.0",
     "@rollup/plugin-node-resolve": "^15.0.2",
-    "rollup": "^3.20.2"
+    "babel-loader": "^9.1.2",
+    "rollup": "^3.20.2",
+    "rollup-plugin-minification": "^0.2.0",
+    "webpack": "^5.79.0",
+    "webpack-cli": "^5.0.1"
   }
 }
