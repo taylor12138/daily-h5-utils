@@ -1,16 +1,21 @@
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import { getBabelOutputPlugin } from "@rollup/plugin-babel";
+const path = require("path");
 
 export default {
-  input: "./src/index.js",
+  input: path.resolve(__dirname, "src/index.js"),
   output: [
     {
-      file: "lib/bundle.cjs.js",
+      file: path.resolve(__dirname, "lib/bundle.cjs.js"),
       format: "cjs",
     },
     {
-      file: "lib/bundle.esm.js",
+      file: path.resolve(__dirname, "index.js"),
+      format: "cjs",
+    },
+    {
+      file: path.resolve(__dirname, "lib/bundle.esm.js"),
       format: "esm",
     },
   ],
