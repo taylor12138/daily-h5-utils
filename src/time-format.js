@@ -1,7 +1,8 @@
 // 获取时间
 export const getBeijingTime = (aDate) => {
+    const time = aDate || +Date.now();
     const beijingTime = new Date(
-        aDate + (new Date(aDate).getTimezoneOffset() + 480) * 60000
+        time + (new Date(time).getTimezoneOffset() + 480) * 60000
     );
     return {
         year: +beijingTime.getFullYear(),

@@ -14,5 +14,7 @@ export const numberFormat = (number) => {
 
 // 返回min - max 之间随机整数
  export const randomRange = (min, max) => {
+    if(min === undefined || max === undefined)return 0;
+    if(min > max)return min;
     return Math.floor(Math.random()*(max-min+1))+min
  }
