@@ -2,6 +2,7 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import { getBabelOutputPlugin } from "@rollup/plugin-babel";
 import { terser } from "rollup-plugin-minification";
+import typescript from "rollup-plugin-typescript";
 const path = require("path");
 
 export default {
@@ -23,6 +24,10 @@ export default {
     resolve(),
     getBabelOutputPlugin({
       presets: ["@babel/preset-env"],
+    }),
+    typescript({
+      exclude: "node_modules/**",
+      typescript: require("typescript"),
     }),
   ],
 };

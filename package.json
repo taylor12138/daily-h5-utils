@@ -1,6 +1,6 @@
 {
   "name": "daily-h5-utils",
-  "version": "0.0.31",
+  "version": "0.0.32",
   "description": "h5日常utils方法合集",
   "main": "./lib/bundle.cjs.js",
   "module": "./lib/bundle.esm.js",
@@ -32,7 +32,15 @@
     "babel-loader": "^9.1.2",
     "rollup": "^3.20.2",
     "rollup-plugin-minification": "^0.2.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.4",
     "webpack": "^5.79.0",
     "webpack-cli": "^5.0.1"
-  }
+  },
+  "browserslist": [
+    "Edge >= 12",
+    "iOS >= 9.0",
+    "Android >= 5.0"
+  ]
 }

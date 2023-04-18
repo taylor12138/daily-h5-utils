@@ -1,5 +1,5 @@
 // 数值显示优化
-export const numberFormat = (number) => {
+export const numberFormat = (number:number):number|string => {
     if (!number) {
         return 0;
     }
@@ -13,7 +13,7 @@ export const numberFormat = (number) => {
 };
 
 // 返回min - max 之间随机整数
- export const randomRange = (min, max) => {
+ export const randomRange = (min:number, max:number):number => {
     if(min === undefined || max === undefined)return 0;
     if(min > max)return min;
     return Math.floor(Math.random()*(max-min+1))+min
